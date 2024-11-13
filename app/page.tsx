@@ -4,6 +4,6 @@ import FirstAct from './components/firstAct'
 
 export default function Home() {
   const [currentAct, setCurrentAct] = useState(0)
-  const acts = [<FirstAct setCurrentAct={setCurrentAct} />]
-  return <>{acts[currentAct]}</>
+  const acts = [<FirstAct key="firstAct" setCurrentAct={setCurrentAct} />]
+  return <div>{acts[currentAct]}</div>
 }
